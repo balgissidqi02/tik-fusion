@@ -10,15 +10,15 @@ const Token = sequelize.define('Token', {
     type: DataTypes.TEXT,
     allowNull: false,
   },
- seller_id: {
-  type: DataTypes.STRING,
-  allowNull: false, 
-  unique: true,     
-},
-expired_at: {
-  type: DataTypes.DATE,
-  allowNull: true,
-}
+  seller_id: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true, 
+  },
+  expired_at: {
+    type: DataTypes.DATE,
+    allowNull: true,
+  }
 }, {
   timestamps: true,
 });
